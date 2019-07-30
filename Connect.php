@@ -4,7 +4,6 @@
 	$username = "mrjiro9x";
 	$password = "abcd1234";
 	$dbname = "dbgch17133";
-
 	
 	$conn = new mysqli($servername . ":". $port , $username, 
 		$password, $dbname);
