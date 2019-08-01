@@ -11,7 +11,8 @@
 		$gender = $_POST["gender"];
 		$fav_book =$_POST["book"];
 		$fav_car = $_POST["car"];
-		$fav = $fav_book . "," . $fav_car;
+		$fav_game = $_POST["game"];
+		$fav = $fav_book . "," . $fav_car . "," . $fav_game;
 		include 'Connect.php';
 
 		$stmt =  $conn->prepare("INSERT INTO RegisterCourse(studentname, course, dob,gender,fav) VALUES (?,?,?,?,?)");
@@ -27,8 +28,7 @@
 	 <ul>
 	 	<li><?php echo $birthday?></li>
 	 	<li><?php echo $gender?></li>
-	 	<li><?php echo $fav_book?></li>
-	 	<li><?php echo $fav_car?></li>
+	 	<li><?php echo $fav?></li>
 	 </ul>
 	 <a href="Register.php">Back</a>
 </body>

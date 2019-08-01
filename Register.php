@@ -5,7 +5,7 @@
 </head>
 <body>
 	<form action="doRegister.php" method="post">
-		<table border="0" width="50%">
+		<table width="50%">
 			<tr>
 				<td>Your name</td>
 				<td><input type="text" name="txtName"></td>
@@ -35,7 +35,7 @@
 					<td>
 						<input type="checkbox" name="book" value="book">Books
 						<input type="checkbox" name="car" value="car">Cars
-
+						<input type="checkbox" name="game" value="game">Games
 					</td>
 				</tr>
 			</tr>
