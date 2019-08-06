@@ -35,8 +35,8 @@
         <h1>Your Information:</h1>
         <?php
         foreach($resultSet as $row)
-            echo '<li>Student Name: '. $row["txtName"] .'</li>';
-            echo '<li>Course: '. $row["cbCourse"] .'</li>';
+            echo '<li>Student Name: '. $row["studentname"] .'</li>';
+            echo '<li>Course: '. $row["course"] .'</li>';
             echo '<li>Date of Birth: '. $row["dob"] .'</li>';
             echo '<li>Gender: '. $row["gender"] .'</li>';
             echo '<li>Favorite: '. $row["fav"] . '</li>';
