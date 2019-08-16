@@ -1,0 +1,25 @@
+body {
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: aquamarine;
+}
+
+.create {
+    padding-top: 20px;
+    text-align: center;
+}
+
+.create table {
+    margin-left: 40%;
+    margin-right: 35%;
+    text-align: left;
+}
+
+.formCreate button {
+    font-style: "Arial";
+    font-size: 25px;
+    height: 60px;
+    width: 150px;
+    background-color: green;
+    color: white;
+}
