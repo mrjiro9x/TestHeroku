@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Signup</title>
     <link rel="stylesheet" href="style.css">
+    <?php
+        include "connect.php";
+    ?>
 </head>
 <body>
     <form class="formCreate" action="" method="post" enctype="multipart/form-data">
@@ -61,7 +64,7 @@
 
             if(empty($errors)==true) {
                 move_uploaded_file($file_tmp,"accounts/".$file_name);
-                echo "Success";
+                echo "Success to accounts/";
             }else{
                 print_r($errors);
             }
@@ -69,8 +72,7 @@
     ?>
 
         </form>
-        <?php
-        include_once "connect.php"; 
+        <?php         
         if(!isset($_POST['submit']))
         {
         }
@@ -86,7 +88,7 @@
                 id, fullname, username, password, email, gender, avatar)
                 VALUES (null, '$fullname', '$username', '$password', $email'', '$gender', '$avatar');";
             $pdo->exec($sql);
-            echo 'add Sucessfully';
+            echo 'add Sucessfully to database';
         }
     ?>
 </body>
