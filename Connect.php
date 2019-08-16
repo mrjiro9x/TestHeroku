@@ -1,16 +1,11 @@
-<?php 
-	$servername = "db4free.net";
-	$port = "3306";
-	$username = "mrjiro9x";
-	$password = "abcd1234";
-	$dbname = "dbgch17133";
-	
-	$conn = new mysqli($servername . ":". $port , $username, 
-		$password, $dbname);
-	
-	if ($conn->connect_error) {
-    	die("Connection failed: " . $conn->connect_error);
-	}	 
-
-	echo "Connection Successfully!";
- ?>
+<?php
+$pdo = new PDO('pgsql:host=ec2-174-129-41-127.compute-1.amazonaws.com;
+port=5432; dbname=d14kltdcqn8op1', 'zosmvlfgqojvhy',
+ '934c84db6c7021b5fcdc7f73b33b02079f3bf8659311519d05d4841087ae4eb9');
+if(!$pdo){
+    echo "Fail!";
+}
+else {
+    echo "Success!";
+}
+?>
